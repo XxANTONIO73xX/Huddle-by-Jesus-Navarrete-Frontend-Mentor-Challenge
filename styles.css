@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+body{
+    margin: 60px;
+    background-color: #674BB1;
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    backdrop-filter:  hsl(300, 69%, 71%);
+}
+
+.logotipo{
+    margin: 40px;
+    margin-left: -2px;
+}
+
+.content{
+    width: 520px;
+    padding: 30px;
+    float: right;
+}
+
+.content h1{
+    font-family: 'Poppins';
+    font-size: 40px;
+    color: white;
+}
+
+.content p{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: white;
+}
+
+.content button{
+    width: 190px;
+    height: 49px;
+    margin: 5px;
+    margin-left: -3px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 15px #393838;
+    color: #674BB1;
+    background-color: white;
+    border: 0px;
+    padding: 5px;
+}
+
+.content button:hover{
+    background-color: #E980E7;
+    color: white;
+    cursor: pointer;
+}
+
+.mockup{
+    width: 715px;
+    display: block;
+    margin-top: 27px;
+    margin-left: 14px;
+    float: left;
+}
+
+
+.contacts{
+    display: block;
+    clear: both;
+    float: right;
+    color: white;
+}
+
+.facebook, .twitter, .instagram{
+    display: block;
+    float: left;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 20px;
+    padding-left: 24px;
+    margin-left: 25px;
+    padding-right: 23px;
+    padding-top: 17px;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover{
+    border: 2px solid #E980E7;
+    color: #E980E7;
+    cursor: pointer;
+}
+
+.facebook i, .twitter i, .instagram i{
+    margin: 0px auto;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    clear: both;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+    padding-left: 40px;
+}
+
+@media (max-width:380px){
+    
+    body{
+        background-image: url("images/bg-mobile.svg");
+        margin: 0px;
+        padding: 0px;
+        background-size: 102%;
+    }
+    
+    .logotipo{
+        margin: 22px;
+        margin-top: 30px;
+    }
+
+    .logotipo img{
+        width: 140px;    
+    }
+
+    .mockup{
+        width: auto;
+        float: none;
+        margin-left: 30px;
+        margin-top: 60px;
+        padding-left: 9px;
+    }
+    .mockup img{
+        width: 305px;
+    }
+    .content{
+        width: auto;
+        float: none;
+    }
+    .content h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .content p{
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .content button{
+        font-size: 15px;
+        width: 250px;
+        margin-left: 10%;
+    }
+
+    .contacts{
+        width: auto;
+        float: none;
+        clear: none;
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+
+    .facebook, .twitter, .instagram{
+        width: auto;
+        padding: 7px 11px 4px 10px;
+        font-size: 15px;
+    }
+
+    .twitter, .instagram{
+        margin-left: 10px;
+    }
+}
